@@ -2,12 +2,11 @@ import {Layout, Menu, Row} from 'antd';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import {RouteNames} from "../router";
-import {log} from "util";
+import {useTypedSelector} from "../hooks/useTypedSelector";
 
 const Navbar = () => {
     const router = useHistory();
-    console.log(router)
-    const isAuth = false;
+    const {isAuth} = useTypedSelector( state => state.auth)
 
     return (
         <Layout.Header>
