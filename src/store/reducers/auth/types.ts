@@ -14,22 +14,22 @@ export enum AuthActionsEnum {
     SET_IS_LOADING = 'SET_IS_LOADING',
 }
 
-interface SetAuthAction {
+export interface SetAuthAction {
     type: AuthActionsEnum.SET_AUTH;
     payload: boolean;
 }
 
-interface SetErrorAction {
+export interface SetErrorAction {
     type: AuthActionsEnum.SET_ERROR;
     payload: string;
 }
 
-interface SetUserAction {
+export interface SetUserAction {
     type: AuthActionsEnum.SET_USER;
     payload: IUser;
 }
 
-interface SetIsLoadingAction {
+export interface SetIsLoadingAction {
     type: AuthActionsEnum.SET_IS_LOADING;
     payload: boolean;
 }
