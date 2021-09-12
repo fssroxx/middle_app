@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import {Button, Form, Input} from "antd";
+import {Button, Form, Input, Row} from "antd";
 import {rules} from "../utils/rules";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import {useActions} from "../hooks/useActions";
@@ -49,9 +49,12 @@ const LoginForm: FC = () => {
             </Form.Item>
 
             <Form.Item >
-                <Button type="primary" htmlType="submit" loading={isLoading}>
-                    Войти
-                </Button>
+                <Row justify="end">
+                    <Button type="primary" htmlType="submit" loading={isLoading}>
+                        Войти
+                    </Button>
+                </Row>
+
             </Form.Item>
         </Form>
     );
