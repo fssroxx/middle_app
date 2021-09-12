@@ -1,5 +1,5 @@
 
-Демо проекта (https://middle-app.vercel.app/login)
+[Запуск приложения] (https://middle-app.vercel.app/login)
 
 
 
